@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://getbootstrap.com/docs/5.2/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <body>
+    
+        <header>
+          <div class="collapse bg-dark" id="navbarHeader">
+          </div>
+          <div class="navbar navbar-dark bg-dark shadow-sm">
+            <div class="container">
+              <a class="navbar-brand d-flex align-items-center">
+                <strong>Привет, {{.}}!</strong>
+              </a>
+              <img src="https://www.svgrepo.com/show/236745/delivery-truck-truck.svg" width="80" height="80">
+            </div>
+          </div>
+        </header>
+        
+        <main>      
+          <section class="py-5 text-center container">
+            <div class="row py-lg-5">
+              <div class="col-lg-6 col-md-8 mx-auto">
+                <h1 class="fw-light">Салон грузовых автомобилей</h1>
+                <p class="lead text-muted">На нашем сайте представлены лучшие грузовые авто (как до 3.5 тонн, так и более 3.5 тонн) из Минска, готовые к продаже.
+                   Имеются модели таких марок, как Volkswagen, Mercedes-Benz и других.
+                    Если вас заинтересовал какой-либо грузовой автомобиль - пишите на нашу почту truckshop**@gmail.com или звоните по телефону +37529**4785</p>
+                    {{if eq . "root@root"}}
+                    <strong><form method="LINK" action="/root">
+                    <input type="submit" value="Посмотреть исходные данные(root)">
+                    </form></strong>
+                    {{end}}
+              </div>
+            </div>
+          </section>
+          <div class="album py-5 bg-light">
+            <div class="container">
+        
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="col">
+                  <div class="card shadow-sm"> 
+                    <img src="https://data.favorit-motors.ru/upload/iblock/d74/d74694890885132be3bf660256486620.jpg" width="100%" height="225">
+                    <h3 align="center">Volkswagen Transporter T6</h3>
+                    <div class="card-body">
+                      <p class="card-text">2011 г., Механика, 2.0 л, Микроавтобус Грузопассажирский, Передний Привод.</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <form method="LINK" action="/transporter">
+                            <input type="submit" value="View">
+                          </form>      
+                        </div>
+                        <h5>35 700$</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <img src="https://www.borovaya.by/upload/iblock/71a/71a08936ffe7f124cc60c08367ec64ed.gif" width="100%" height="225">
+                    <h3 align="center">Ford Transit Tourneo</h3>
+                    <div class="card-body">
+                      <p class="card-text">2018 г., 2,2 л, 155 л.с., Дизельный, Передний Привод.</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <form method="LINK" action="/transit">
+                            <input type="submit" value="View">
+                          </form>
+                        </div>
+                        <h5>36 900$</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <img src="https://www.volvotrucks.ru/ru-ru/trucks/Cpecifikacii_i_predlozheniya/trucks2021/trucks/_jcr_content/root/responsivegrid/columncontrol_1945274001/parsys1/image.coreimg.82.1024.png/1614618961150/420.png" width="100%" height="225">
+                    <h3 align="center">Volvo FM</h3>
+                    <div class="card-body">
+                      <p class="card-text">2012 г. ,Седельный Тягач, 12.0 л, Дизель, Механика, 4x2.</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <form method="LINK" action="/fm">
+                            <input type="submit" value="View">
+                          </form>    
+                        </div>
+                        <h5>54 000$</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <img src="https://cache.atlantm.com/create-resize/static/multifile/326/1392/vw_crafter_kasten_30_L3H2_candy_white_01n.png/1060x460" width="100%" height="225">
+                    <h3 align="center">Volkswagen Crafter</h3>
+                    <div class="card-body">
+                      <p class="card-text">2008 г., До 3,5 тонн, Фургон, 2.5 л, Дизель, Механика, 4x2.</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <form method="LINK" action="/crafter">
+                            <input type="submit" value="View">
+                          </form>    
+                        </div>
+                        <h5>19 500$</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <img src="https://ilkalternatif.com/wp-content/uploads/2020/03/mercedes-sprinter-20-kisilik-soforlu-736x414.jpg" width="100%" height="225">
+                    <h3 align="center">Mercedes-Benz Sprinter</h3>
+                    <div class="card-body">
+                      <p class="card-text">2017 г., До 3,5 тонн, Фургон, 2.2 л, Дизель, Автомат, 4x2.</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <form method="LINK" action="/sprinter">
+                            <input type="submit" value="View">
+                          </form>    
+                        </div>
+                        <h5>55 500$</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <img src="https://dafbarigui.com.br/uploads/car_versions/QjAv8WsIK2.png" width="100%" height="225">
+                    <h3 align="center">DAF CF85</h3>
+                    <div class="card-body">
+                      <p class="card-text">2005 г., Седельный тягач, 11.0 л, Дизель, Механика, 4x2.</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <form method="LINK" action="/cf85">
+                            <input type="submit" value="View">
+                          </form>    
+                        </div>
+                        <h5>14 700$</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div> 
+        
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <img src="https://www.avtogermes.ru/images/marks/renault/master/i/colors/qng/b50588bb8a0c1269669d4a1df114fe28.png" width="100%" height="225">
+                    <h3 align="center">Renault Master</h3>
+                    <div class="card-body">
+                      <p class="card-text">2015 г., До 3,5 тонн, Тентованный, 2.3 л, Дизель, Механика, 4x4.</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <form method="LINK" action="/master">
+                            <input type="submit" value="View">
+                          </form>    
+                        </div>
+                        <h5>19 400$</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div> 
+
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <img src="https://spectekhnika.info/wp-content/uploads/2019/02/%D0%93%D0%90%D0%97-2705.png" width="100%" height="225">
+                    <h3 align="center">ГАЗ-2705</h3>
+                    <div class="card-body">
+                      <p class="card-text">2009 г., До 3,5 тонн, 2.9 л, Фургон, Бензин, Механика, 4x2.</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <form method="LINK" action="/2705">
+                            <input type="submit" value="View">
+                          </form>    
+                        </div>
+                        <h5>7 500$</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>  
+
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <img src="https://pandmspeedkft.hu/assets/img/szolgaltatas/2.png"width="100%" height="225">
+                    <h3 align="center">MAN TGA</h3>
+                    <div class="card-body">
+                      <p class="card-text">2005 г., Седельный Тягач, 12.6 л, Дизель, Механика, 4x2.</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <form method="LINK" action="/tga">
+                            <input type="submit" value="View">
+                          </form>    
+                        </div>
+                        <h5>28 200$</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div> 
+
+              </div>
+            </div>
+          </div>
+        </main>
+        <footer class="text-muted py-5">
+          <div class="container">
+            <p class="float-end mb-1">
+              <a href="/">Выйти из аккаунта</a>
+            </p>
+            <p class="mb-1">Понравилось авто? Пишите на нашу почту truckshop**@gmail.com или звоните по телефону +37529**4785</p>
+          </div>
+        </footer>
+        </body>
+      </body>
+    </html>

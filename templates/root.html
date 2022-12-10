@@ -1,0 +1,44 @@
+{{define "root"}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Root info</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://getbootstrap.com/docs/5.2/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <body>
+    <header>
+        <div class="navbar navbar-dark bg-dark shadow-sm">
+          <div>
+            <a href="/home/"><img class="center-pic" src="https://www.svgrepo.com/show/236745/delivery-truck-truck.svg" width="80" height="80"></a>
+          </div>
+        </div>
+    </header>
+    
+        <div class="row py-lg-5">
+            <div class="col-lg-6 col-md-8 mx-auto">
+                <p>
+                    <h1>Полная информация о вебсайте:</h1>
+                    <strong>История входов на вебсайт: логин, пароль (в скобках):</strong><br>
+                    <strong>{{.}}</strong><br>
+                    <strong>База данных: MySql</strong><br>
+                    <strong>Доступ к базе данных через: PhpMyAdmin</strong><br>
+                    <strong>Название базы данных пользователей: users</strong><br>
+                    <strong>Количество учётных записей, имеющих доступ к вебсайту: 2</strong><br>
+                    <strong>Сайт написан на: Go, HTML</strong><br>
+                    <strong>Сайт держится на сервере: Open Server Panel</strong><br>
+                    <br><strong>Разработчик вебсайта: artnikel</strong><br>
+                </p>
+                <br><br><a href="/home/">Вернуться на главную страницу</a>
+            </div>
+        </div>  
+    </div>
+    </main> 
+    </body>
+</body>
+</html>
+{{end}}
